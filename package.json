@@ -3,11 +3,13 @@
   "version": "1.0.0",
   "description": "practice",
   "main": "index.js",
+  "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "node-sass scss/styles.scss -o dist",
     "watch": "npm run build && node-sass scss/styles.scss -wo dist",
-    "sasslint": "sass-lint -c .sass-lint.yml -v -q || exit 0"
+    "sasslint": "sass-lint -c .sass-lint.yml -v -q || exit 0",
+    "build-webpack": "webpack"
   },
   "repository": {
     "type": "git",
@@ -19,6 +21,11 @@
     "url": "https://github.com/vadam992/practice/issues"
   },
   "homepage": "https://github.com/vadam992/practice#readme",
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.2"
+  },
   "dependencies": {
     "@babel/core": "^7.18.2",
     "bootstrap": "^5.1.3",
