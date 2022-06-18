@@ -6,8 +6,8 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node-sass scss/styles.scss -o dist",
-    "watch": "npm run build && node-sass scss/styles.scss -wo dist",
+    "build": "node-sass scss/styles.scss -o dist --output-style compressed",
+    "watch": "npm run build && node-sass scss/styles.scss -wo dist --output-style compressed",
     "sasslint": "sass-lint -c .sass-lint.yml -v -q || exit 0",
     "build-webpack": "webpack"
   },
