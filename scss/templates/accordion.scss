@@ -1,0 +1,109 @@
+.accordion {
+  .accordion__main-title {
+    margin-bottom: 50px;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 26px;
+    text-align: center;
+  }
+
+  .accordion__row {
+    display: flex;
+    align-items: center;
+    padding: 24px 0;
+    border-top: 1px solid #e8e8e8;
+    cursor: pointer;
+
+    &.active {
+      padding-bottom: 11px;
+
+      .accordion_icon {
+        transform: rotate(45deg);
+        transition: .2s ease-in-out;
+      }
+    }
+
+    .accordion__number {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 23px;
+      height: 23px;
+      padding: 2px;
+      border: 2px solid #afd7ff;
+      border-radius: 50px;
+      color: $color-black;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 18px;
+    }
+
+    .accordion__title {
+      margin-left: 23px;
+      color: $color-black;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 21px;
+    }
+
+    .accordion_icon {
+      margin: 0 15px 0 auto;
+      transition: .2s ease-in-out;
+    }
+  }
+
+  .accordion__description {
+    display: none;
+    margin-left: 47px;
+    padding-bottom: 25px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .accordion {
+    .accordion__main-title {
+      margin-bottom: 50px;
+      font-size: 48px;
+      line-height: 56px;
+    }
+
+    .accordion__row {
+      padding: 41px 0;
+
+      &.active {
+        padding-bottom: 11px;
+      }
+
+      .accordion__number {
+        width: 45px;
+        height: 45px;
+        padding: 13px 10px 10px;
+        font-size: 20px;
+        line-height: 23px;
+      }
+
+      .accordion__title {
+        margin-left: 23px;
+        font-size: 20px;
+        line-height: 23px;
+      }
+    }
+
+    .accordion__description {
+      margin-left: 71px;
+      padding-bottom: 56px;
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .accordion {
+    .accordion__row {
+      .accordion_icon {
+        svg {
+          transform: scale(.7);
+        }
+      }
+    }
+  }
+}

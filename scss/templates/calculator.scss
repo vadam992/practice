@@ -2,14 +2,14 @@
   .calculator__box {
     margin-bottom: 20px;
     padding: 20px 11px;
-    background: rgba(234, 243, 255, .7);
     border-radius: 12px;
+    background: rgba(234, 243, 255, .7);
 
     hr {
       height: 1px;
       margin: 15px 0;
-      background: $color-white;
       border-radius: 8px;
+      background: $color-white;
     }
 
     .calculator__row {
@@ -49,7 +49,7 @@
           &.calculator__weight--bold,
           &.calculator__quantity--bold {
             font-weight: 700;
-          } 
+          }
 
           &.calculator__weight--smaller,
           &.calculator__quantity--smaller {
@@ -71,9 +71,9 @@
       }
 
       .form-control {
+        color: $color-blue-dark;
         font-size: 14px;
         font-weight: 700;
-        color: $color-blue-dark;
         text-align: right;
       }
 
@@ -82,7 +82,7 @@
       }
 
       .calculator__weight-input {
-       span {
+        span {
           min-width: 90px;
           background-color: #ededed;
           color: $color-black;
@@ -92,32 +92,32 @@
   }
 }
 
-@media screen and (min-width: 1025px) { 
+@media screen and (min-width: 1024px) {
   .section.calculator {
-    .calculator__box { 
+    .calculator__box {
       max-width: 743px;
       margin: 0 auto 20px;
       padding: 20px 40px;
 
       .calculator__row {
-        justify-content: inherit;
         flex: 1 1 auto;
+        justify-content: inherit;
         width: 100%;
 
         &.calculator__row--input-col {
           flex-direction: row;
 
-          .calculator__title { 
+          .calculator__title {
             flex: 0 0 14%;
           }
 
           .calculator__weight,
           .calculator__quantity {
-            flex: 0 0 25%; 
+            flex: 0 0 25%;
           }
         }
 
-        .calculator__title { 
+        .calculator__title {
           flex: 0 0 16%;
           font-size: 16px;
 
@@ -131,6 +131,7 @@
 
           .calculator__weight-input {
             max-width: 220px;
+
             span {
               min-width: inherit;
             }
@@ -146,7 +147,7 @@
           flex: 1 1 auto;
           width: 100%;
 
-          .calculator__weight { 
+          .calculator__weight {
             flex: 0 0 35%;
           }
 
@@ -164,9 +165,9 @@
             }
           }
 
-          .calculator_sale { 
-            font-size: 16px;
+          .calculator_sale {
             flex: 0 0 11%;
+            font-size: 16px;
           }
         }
       }

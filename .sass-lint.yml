@@ -1,5 +1,5 @@
 files:
-  include: 'scss/*.s+(a|c)ss'
+  include: 'scss/templates/*.s+(a|c)ss'
   ignore: 'app/design/frontend/Oander/hodor/web/scss/styles/vendors/**/*.s+(a|c)ss'
 
 # Rule Configuration

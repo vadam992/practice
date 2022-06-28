@@ -3,8 +3,8 @@
 
   .grids__cards {
     .grids__card {
-      position: relative;
       display: block;
+      position: relative;
       margin-bottom: 20px;
       padding: 30px;
       background-color: $color-blue;
@@ -12,16 +12,16 @@
 
       .grids__title {
         margin-bottom: 20px;
+        color: $color-black;
         font-size: 20px;
         line-height: 30px;
-        color: $color-black;
       }
 
       .grids__description {
         margin-bottom: 20px;
+        color: $color-black;
         font-size: 16px;
         line-height: 22px;
-        color: $color-black;
       }
 
       .grids__continue {
@@ -29,10 +29,10 @@
         padding: 5px 20px;
         border: 1px solid $color-green;
         border-radius: 30px;
+        background: $color-green;
+        color: $color-black;
         font-size: 14px;
         line-height: 18px;
-        color: $color-black;
-        background: $color-green;
 
         &:hover {
           background: $color-white;
@@ -42,13 +42,13 @@
   }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1024px) {
   .section.grids {
     .grids__cards {
       display: grid;
       grid-template-columns: 1fr 1.42fr;
-      grid-template-rows: repeat(3, 0.957fr);
-      gap: 20px;
+      grid-template-rows: repeat(3, .957fr);
+      grid-gap: 20px;
 
       .grids__card {
         display: flex;
@@ -56,11 +56,11 @@
         align-items: flex-start;
         height: 100%;
         margin-bottom: 0;
-        transition: all .2s ease-in-out;
+        transition: .2s ease-in-out;
 
         &:hover {
           transform: scale(1.02);
-          transition: all .2s ease-in-out;
+          transition: .2s ease-in-out;
         }
 
         &.grids__card--1 {

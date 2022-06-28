@@ -1,6 +1,16 @@
 import $ from 'jquery';
 
 document.addEventListener("DOMContentLoaded", function() { 
-  $('body').addClass('asdASD');
-  //document.querySelector('body').classList.add('asd');
+  $('.accordion__row').each(function() {
+    $(this).click(function() {
+      var panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        $(this).removeClass('active');
+        panel.style.display = "none";
+      } else {
+        $(this).addClass('active');
+        panel.style.display = "block";
+      }
+    })
+  })
 });
