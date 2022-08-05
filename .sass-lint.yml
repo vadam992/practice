@@ -1,6 +1,6 @@
 files:
   include: 'scss/templates/*.s+(a|c)ss'
-  ignore: 'scss/templates/*.s+(a|c)ss'
+  ignore: ''
 
 # Rule Configuration
 # reference: https://github.com/sasstools/sass-lint/tree/master/docs/rules/
